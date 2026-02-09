@@ -1,44 +1,14 @@
-print("new repo")
+arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
+Maximum = arr[0]
+Minimum = arr[0]
 
-print("new repo")
-print("new repo")
-print("new repo")
-print("new repo")
-print("new repo")
+for num in arr:
+    if num > Maximum:
+        Maximum = num
 
-print("new repo")
-print("new repo")
+    if num < Minimum:
+        Minimum = num
 
-
-
-
-
-print("new repo")
-
-
-print("new repo")
-print("new repo")
-print("new repo")
-print("new repo")
-print("new repo")
-
-print("new repo")
-print("new repo")
-
-
-
-
-
-
-print("new repo")
-
-
-print("new repo")
-print("new repo")
-print("new repo")
-print("new repo")
-print("new repo")
-
-print("new repo")
-print("new repo")
+print("maximum: ",Maximum)
+print("Minumum: ",Minimum)        
