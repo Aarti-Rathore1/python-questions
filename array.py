@@ -28,3 +28,11 @@ while start < end :
     end -= 1
 
 print("reverse array is : ",arr)
+
+
+# second largest element
+arr = list(map(int, input("Enter elements separated by space: ").split()))
+
+arr.sort()
+
+print("second largest element: ",arr[-2])
