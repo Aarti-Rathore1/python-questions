@@ -65,4 +65,28 @@ for i in range(len(arr)):
 
 print("After moving zeros: ",arr)        
 
+
+# count frequency of each element
+arr = list(map(int,input("Enter elements with spaces: ").split()))
+
+freq = {}
+
+for num in arr:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
+
+print("frequencies: ")
+for key,value in freq.items():
+    print(key,"->",value)  
+
+
+#shorter way
+from collections import Counter
+
+arr = list(map(int,input("Enter the elements: ").split()))
+freq = Counter(arr)
+
+print(freq)
     
