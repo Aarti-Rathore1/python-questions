@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -35,7 +35,7 @@ arr = list(map(int, input("Enter elements separated by space: ").split()))
 
 arr.sort()
 
-print("second largest element: ",arr[-2])'''
+print("second largest element: ",arr[-2])
 
 
 # check if arrray is not sorted 
@@ -51,6 +51,18 @@ if  is_sorted(arr):
    print("array is sorted")
 
 else:
-   print("array is not sorted")   
+   print("array is not sorted") 
+
+#   moves all the zeros to the back of the array
+arr = list(map(int,input("Enter the elements with spaces: ").split()))
+
+pos = 0
+
+for i in range(len(arr)):
+    if arr[i] != 0:
+        arr[pos], arr[i] = arr[i], arr[pos]
+        pos += 1
+
+print("After moving zeros: ",arr)        
 
     
