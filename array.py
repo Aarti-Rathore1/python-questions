@@ -88,7 +88,7 @@ from collections import Counter
 arr = list(map(int,input("Enter the elements: ").split()))
 freq = Counter(arr)
 
-print(freq)'''
+print(freq)
 
 #   find a element in linear search
 arr = list(map(int, input("Enter the elements with spaces: ").split()))
@@ -104,6 +104,18 @@ for i in range(len(arr)):
         break
 
 if not found:
-  print("number not found")    
-    
+  print("number not found")    '''
+
+#count occurence using linear search
+
+arr = list(map(int,input("Enter elements using spaces: ").split()))
+key = int(input("Enter the element you want to count: "))
+
+count = 0
+
+for num in arr:
+   if num == key:
+      count += 1
+
+print("Number appears",count,"times")       
     
