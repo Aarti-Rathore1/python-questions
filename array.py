@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -88,5 +88,22 @@ from collections import Counter
 arr = list(map(int,input("Enter the elements: ").split()))
 freq = Counter(arr)
 
-print(freq)
+print(freq)'''
+
+#   find a element in linear search
+arr = list(map(int, input("Enter the elements with spaces: ").split()))
+
+key = int(input("Enter the number which you want to search: "))
+
+found = False
+
+for i in range(len(arr)):
+    if arr[i] == key:
+        print("number found at index",i)
+        found = True
+        break
+
+if not found:
+  print("number not found")    
+    
     
