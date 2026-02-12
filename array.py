@@ -104,7 +104,7 @@ for i in range(len(arr)):
         break
 
 if not found:
-  print("number not found")    '''
+  print("number not found")    
 
 #count occurence using linear search
 
@@ -117,5 +117,20 @@ for num in arr:
    if num == key:
       count += 1
 
-print("Number appears",count,"times")       
+print("Number appears",count,"times")    '''
+
+# find all negative number
+
+arr = list(map(int,input("Enter the elements: ").split()))
+negatives = []
+
+for num in arr:
+    if num < 0 :
+        negatives.append(num)
+
+if negatives:        
+        print("Negative numbers are: ",negatives)
+       
+else:
+    print("No negative numbers")    
     
