@@ -117,7 +117,7 @@ for num in arr:
    if num == key:
       count += 1
 
-print("Number appears",count,"times")    '''
+print("Number appears",count,"times")    
 
 # find all negative number
 
@@ -132,5 +132,21 @@ if negatives:
         print("Negative numbers are: ",negatives)
        
 else:
-    print("No negative numbers")    
+    print("No negative numbers")    '''
+
+# search for name in a list
+names  = input("Enter names separated by spaces: ").split()
+key  = input("Enter name to search: ")
+
+found = False
+
+for i in range(len(names)):
+    if names[i].lower() == key.lower():
+        print("name found at index",i)
+        found = True
+        break
+
+if not found:
+    print("name not found")    
+
     
