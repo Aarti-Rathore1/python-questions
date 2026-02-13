@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -172,7 +172,7 @@ while low <= high:
 
 print("Index: ",found)      
 
-# first occurence usinfg binary search
+# first occurence using binary search
 
 arr = list(map(int,input("Enter the elements in sorted array: ").split()))
 key = int(input("Enter the element to search: "))
@@ -193,7 +193,30 @@ while low <= high:
    else: 
       high = mid -1 
 
-print("First occurence index: ",result)          
+print("First occurence index: ",result)  '''    
+
+# find last occurence
+arr = list(map(int,input("Enter the elements in sorted array: ").split()))
+key = int(input("Enter the element: "))
+
+low = 0
+high = len(arr) - 1
+result = -1
+
+while low <= high:
+    mid = (low + high) // 2
+
+    if arr[mid] == key:
+        result = mid
+        low = mid + 1
+
+    elif arr[mid] < key:
+        low = mid + 1
+
+    else :
+        high = mid - 1
+
+print("Index: ",result)           
 
 
     
