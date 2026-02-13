@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -170,7 +170,7 @@ while low <= high:
     else:
        high = mid - 1
 
-print("Index: ",found)      ''' 
+print("Index: ",found)      
 
 # first occurence usinfg binary search
 
