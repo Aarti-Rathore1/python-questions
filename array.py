@@ -132,7 +132,8 @@ if negatives:
         print("Negative numbers are: ",negatives)
        
 else:
-    print("No negative numbers")    '''
+    print("No negative numbers")    
+
 
 # search for name in a list
 names  = input("Enter names separated by spaces: ").split()
@@ -147,6 +148,52 @@ for i in range(len(names)):
         break
 
 if not found:
-    print("name not found")    
+    print("name not found") 
+
+# find index using binary search
+
+arr = list(map(int,input("Enter the elements in sorted way: ").split()))
+key = int(input("Enter the element: "))
+
+low = 0
+high = len(arr) - 1
+found = -1
+
+while low <= high:
+    mid = (low + high) // 2
+
+    if arr[mid] == key:
+      found = mid
+      break
+    elif arr[mid] < key:
+       low = mid + 1
+    else:
+       high = mid - 1
+
+print("Index: ",found)      ''' 
+
+# first occurence usinfg binary search
+
+arr = list(map(int,input("Enter the elements in sorted array: ").split()))
+key = int(input("Enter the element to search: "))
+
+low = 0
+high = len(arr)-1
+result = -1
+
+while low <= high:
+   mid = (low + high) // 2
+
+   if arr[mid] == key:
+    result = mid
+    high = mid -1       # move left to find earlier occurence
+
+   elif arr[mid] < key:
+      low = mid + 1
+   else: 
+      high = mid -1 
+
+print("First occurence index: ",result)          
+
 
     
