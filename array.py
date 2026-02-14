@@ -193,7 +193,7 @@ while low <= high:
    else: 
       high = mid -1 
 
-print("First occurence index: ",result)  '''    
+print("First occurence index: ",result)    
 
 # find last occurence
 arr = list(map(int,input("Enter the elements in sorted array: ").split()))
@@ -216,7 +216,48 @@ while low <= high:
     else :
         high = mid - 1
 
-print("Index: ",result)           
+print("Index: ",result)   '''
 
+# count total  occurence
+def first_occurence(arr,key):
+    low = 0
+    high = len(arr)-1
+    result = -1 
 
-    
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == key:
+            result = mid
+            high = mid - 1
+        elif arr[mid] < key:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return result
+                
+def last_occurence(arr,key):
+    low = 0
+    high = len(arr)-1
+    result = -1 
+
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == key:
+            result = mid
+            low  = mid + 1
+        elif arr[mid] < key:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return result
+
+arr = list(map(int,input("Enter the elments with spaces: ").split()))
+key = int(input("Enter numbers to count: "))
+
+first = first_occurence(arr,key)
+last = last_occurence(arr,key)
+
+if first == -1:
+    print("count: 0")
+else:
+    print("count:",last - first + 1)    
