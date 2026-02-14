@@ -216,7 +216,7 @@ while low <= high:
     else :
         high = mid - 1
 
-print("Index: ",result)   '''
+print("Index: ",result)   
 
 # count total  occurence
 def first_occurence(arr,key):
@@ -260,4 +260,26 @@ last = last_occurence(arr,key)
 if first == -1:
     print("count: 0")
 else:
-    print("count:",last - first + 1)    
+    print("count:",last - first + 1)    '''
+
+# search insert position 
+arr = list(map(int,input("enter the elemnts in sorted way: ").split()))
+key = int(input("Enter the element: "))
+
+low = 0
+high = len(arr) - 1
+ans = len(arr)
+
+while low <= high:
+    mid = (low + high) // 2
+
+    if arr[mid] == key:
+        ans = mid
+        break
+    elif arr[mid] < key:
+        low = mid + 1
+    else:
+        ans = mid
+        high = mid - 1
+
+print("position: ",ans)            
