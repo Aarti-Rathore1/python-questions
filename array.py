@@ -260,7 +260,7 @@ last = last_occurence(arr,key)
 if first == -1:
     print("count: 0")
 else:
-    print("count:",last - first + 1)    '''
+    print("count:",last - first + 1)    
 
 # search insert position 
 arr = list(map(int,input("enter the elemnts in sorted way: ").split()))
@@ -282,4 +282,37 @@ while low <= high:
         ans = mid
         high = mid - 1
 
-print("position: ",ans)            
+print("position: ",ans)     '''       
+
+# reverse a string
+s = input("Enter a string: ")
+
+i = len(s) - 1
+rev = ""
+
+while i >= 0:
+    rev += s[i]
+    i -= 1
+
+print("reversed string: ",rev) 
+
+# check if number is palindrome
+s = input("Enter a string: ").lower()
+
+i = 0 
+j = len(s) - 1
+is_palindrome = True
+
+while i < j :
+    if s[i] != s[j]:
+     is_palindrome = False
+     break
+
+    i += 1
+    j -=1 
+
+if is_palindrome :
+     print("palindrome")
+
+else:
+    print("non palindrome")     
