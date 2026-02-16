@@ -315,7 +315,7 @@ if is_palindrome :
      print("palindrome")
 
 else:
-    print("non palindrome")     '''
+    print("non palindrome")     
 
 # count consonants and vowels in a string
 
@@ -325,7 +325,7 @@ vowels = 0
 consonants = 0
 
 for ch  in s:
-    if ch.isalpha():
+    if ch.isalpha():       # only count letters
         if ch in "aeiou":
             vowels += 1
 
@@ -333,4 +333,14 @@ for ch  in s:
             consonants += 1
 
 print("vowels: ",vowels)
-print("consonants: ",consonants)                
+print("consonants: ",consonants)   '''
+
+# remove all spaces from a string
+
+s = input("Enter a string: ")
+
+result = ""
+for ch in s:
+    if ch != " ":
+        result += ch
+print("without space: ",result)
