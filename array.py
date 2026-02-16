@@ -333,7 +333,7 @@ for ch  in s:
             consonants += 1
 
 print("vowels: ",vowels)
-print("consonants: ",consonants)   '''
+print("consonants: ",consonants)   
 
 # remove all spaces from a string
 
@@ -343,4 +343,19 @@ result = ""
 for ch in s:
     if ch != " ":
         result += ch
-print("without space: ",result)
+print("without space: ",result)'''
+
+# convert uppercase <-> lowercase
+s = input("Enter a string: ")
+
+result = ""
+
+for ch in s:
+    if ch.isupper():
+        result += ch.lower()
+    elif ch.islower():
+        result += ch.upper()
+    else:
+        result += ch
+
+print("converted string: ",result)                
