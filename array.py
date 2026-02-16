@@ -282,7 +282,7 @@ while low <= high:
         ans = mid
         high = mid - 1
 
-print("position: ",ans)     '''       
+print("position: ",ans)        
 
 # reverse a string
 s = input("Enter a string: ")
@@ -315,4 +315,22 @@ if is_palindrome :
      print("palindrome")
 
 else:
-    print("non palindrome")     
+    print("non palindrome")     '''
+
+# count consonants and vowels in a string
+
+s = input("Enter a string: ").lower()
+
+vowels = 0
+consonants = 0
+
+for ch  in s:
+    if ch.isalpha():
+        if ch in "aeiou":
+            vowels += 1
+
+        else:
+            consonants += 1
+
+print("vowels: ",vowels)
+print("consonants: ",consonants)                
