@@ -343,7 +343,7 @@ result = ""
 for ch in s:
     if ch != " ":
         result += ch
-print("without space: ",result)'''
+print("without space: ",result)
 
 # convert uppercase <-> lowercase
 s = input("Enter a string: ")
@@ -358,4 +358,14 @@ for ch in s:
     else:
         result += ch
 
-print("converted string: ",result)                
+print("converted string: ",result)  '''     
+
+#  arraylist
+n = int(input("how many elements: "))      
+arr = []
+
+for i in range(n):
+    x = int(input())
+    arr.append(x)
+
+print(arr)    
