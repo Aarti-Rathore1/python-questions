@@ -358,7 +358,7 @@ for ch in s:
     else:
         result += ch
 
-print("converted string: ",result)  '''     
+print("converted string: ",result)     
 
 #  arraylist
 n = int(input("how many elements: "))      
@@ -368,4 +368,19 @@ for i in range(n):
     x = int(input())
     arr.append(x)
 
-print(arr)    
+print(arr)  '''
+
+# update an element at a given index
+
+arr = list(map(int,input("Enter list element: ").split()))
+print("original list: ",arr)
+
+index = int(input("Enter index to update: "))
+new_value = int(input("Enter new value: "))
+
+if 0 <= index < len(arr):
+    arr[index] = new_value
+    print("updated list: ",arr)
+
+else:
+    print("invalid index")    
