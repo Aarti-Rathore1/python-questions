@@ -368,7 +368,7 @@ for i in range(n):
     x = int(input())
     arr.append(x)
 
-print(arr)  '''
+print(arr)  
 
 # update an element at a given index
 
@@ -383,4 +383,32 @@ if 0 <= index < len(arr):
     print("updated list: ",arr)
 
 else:
-    print("invalid index")    
+    print("invalid index")   '''
+
+# remove element from pythonlist
+arr = list(map(int,input("Enter the elments: ").split()))
+print("original  list: ",arr)
+
+choice = int(input("enter 1 to remove by index,enter 2 to remove by value: "))
+
+if choice == 1:
+    index = int(input("Enter index to remove: "))
+    if 0 <= choice <len(arr):
+        arr.pop(index)
+        print("updated array : ",arr)
+
+    else:
+        print("invalid index")
+
+elif choice == 2:
+    value = int(input("Enter element to remove: "))
+    if value in arr:
+        arr.remove(value)
+        print("updated list: ",arr)
+
+    else:
+        print("value not found")
+        
+
+else:
+    print("invalid choice")                            
