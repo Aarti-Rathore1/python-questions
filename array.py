@@ -383,7 +383,7 @@ if 0 <= index < len(arr):
     print("updated list: ",arr)
 
 else:
-    print("invalid index")   '''
+    print("invalid index")   
 
 # remove element from pythonlist
 arr = list(map(int,input("Enter the elments: ").split()))
@@ -411,4 +411,16 @@ elif choice == 2:
         
 
 else:
-    print("invalid choice")                            
+    print("invalid choice")    '''
+
+#remove duplicates in pythonlist
+arr = list(map(int,input("Enter list elements: ").split()))
+
+unique = []
+for x in arr:
+   if x not in unique:
+      unique.append(x)
+
+print("list after removing duplicates",unique)      
+
+                        
