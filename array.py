@@ -411,7 +411,7 @@ elif choice == 2:
         
 
 else:
-    print("invalid choice")    '''
+    print("invalid choice")    
 
 #remove duplicates in pythonlist
 arr = list(map(int,input("Enter list elements: ").split()))
@@ -421,6 +421,14 @@ for x in arr:
    if x not in unique:
       unique.append(x)
 
-print("list after removing duplicates",unique)      
+print("list after removing duplicates",unique)      '''
 
-                        
+# sort in ascending and descending
+arr = list(map(int,input("Enter elements:  ").split()))
+
+arr.sort()
+print("acsending: ",arr)
+
+arr.sort(reverse=True)
+print("descending: ",arr)
+
