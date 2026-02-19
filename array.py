@@ -421,7 +421,7 @@ for x in arr:
    if x not in unique:
       unique.append(x)
 
-print("list after removing duplicates",unique)      '''
+print("list after removing duplicates",unique)      
 
 # sort in ascending and descending
 arr = list(map(int,input("Enter elements:  ").split()))
@@ -430,5 +430,19 @@ arr.sort()
 print("acsending: ",arr)
 
 arr.sort(reverse=True)
-print("descending: ",arr)
+print("descending: ",arr)'''
 
+# two sum problem(return indices)
+arr = list(map(int,input("enter elements:").split()))
+target = int(input("enter target sum: "))
+
+seen = {}
+
+for i in range(len(arr)):
+    need = target - arr[i]
+
+    if need in seen:
+        print("Indices:",seen[need],i)
+
+
+    seen[arr[i]] = 1   
