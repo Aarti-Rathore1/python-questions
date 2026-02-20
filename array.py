@@ -460,7 +460,7 @@ def kadane(nums):
     
 arr = [-2, 1, -3, 4, 4,1,  -1, 2, 1, -5, 4]
 print("running kadane file")
-print(kadane(arr))    '''
+print(kadane(arr))    
 
 # rotate array by k positions
 def rotate_right(arr,k):
@@ -479,4 +479,21 @@ def rotate_right(arr,k):
 
 arr = [1,2,3,4,5]
 rotate_right(arr,2)
-print(arr)
+print(arr)'''
+
+# union and intersection of two array
+
+def union_and_intersection(a,b):
+    setA = set(a)
+    setB = set(b)
+
+    union = list(setA | setB)
+    intersection = list(setA & setB)
+
+    return union, intersection
+A = [1,2,3,4,5]
+B = [3,4,5,6,7]
+
+u,i = union_and_intersection(A,B)
+print("union: ",u)
+print("intersection:",i)
