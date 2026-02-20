@@ -445,7 +445,7 @@ for i in range(len(arr)):
         print("Indices:",seen[need],i)
 
 
-    seen[arr[i]] = 1   '''
+    seen[arr[i]] = 1   
 
 # kadane's algorithm (maximum subarray sum)
 def kadane(nums):
@@ -460,6 +460,23 @@ def kadane(nums):
     
 arr = [-2, 1, -3, 4, 4,1,  -1, 2, 1, -5, 4]
 print("running kadane file")
-print(kadane(arr))    
+print(kadane(arr))    '''
 
+# rotate array by k positions
+def rotate_right(arr,k):
+    n = len(arr)
+    k %= n
 
+    def reverse(l,r):
+        while l < r:
+            arr[l],arr[r] = arr[r],arr[l]
+            l += 1
+            r -= 1
+
+    reverse(0, n - 1)  # reverse whole array
+    reverse(0, k - 1)    # reverse first k
+    reverse(k, n -1)   # reverse rest   
+
+arr = [1,2,3,4,5]
+rotate_right(arr,2)
+print(arr)
