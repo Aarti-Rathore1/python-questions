@@ -505,7 +505,7 @@ expected_sum = n * (n + 1) // 2
 actual_sum = sum(arr)
 
 missing = expected_sum - actual_sum
-print("Missing number: ",missing) '''
+print("Missing number: ",missing) 
 
 # sort 0's, 1's, 2's
 arr = list(map(int,input("enter 0's, 1's, 2's: ").split()))
@@ -527,4 +527,29 @@ while mid <= high:
         arr[mid], arr[high] = arr[high], arr[mid]
         high -= 1
         
-print("sorted array: ",arr)        
+print("sorted array: ",arr)      '''
+
+# subarray with given sum (sliding window)
+
+arr = list(map(int,input("enter non -negative numbers: ").split()))
+target = int(input("enter target sum:"))
+
+left = 0
+current_sum = 0
+found = False
+
+for right in range(len(arr)):
+    current_sum += arr[right]
+
+    while current_sum > target and left  <= right:
+        current_sum -= arr[left]
+        left += 1
+
+    if current_sum == target:
+        print("subarray found from index",left,"to",right)
+        found = True
+        break
+
+if not found:
+    print("no subarry found")        
+
