@@ -493,10 +493,9 @@ def union_and_intersection(a,b):
     return union, intersection
 A = [1,2,3,4,5]
 B = [3,4,5,6,7]
-
 u,i = union_and_intersection(A,B)
 print("union: ",u)
-print("intersection:",i)'''
+print("intersection:",i)
 
 # finding missing numbers from 1 to n
 arr = list(map(int,input("Enter numbers from 1 to n (one missing): ").split()))
@@ -506,4 +505,26 @@ expected_sum = n * (n + 1) // 2
 actual_sum = sum(arr)
 
 missing = expected_sum - actual_sum
-print("Missing number: ",missing)
+print("Missing number: ",missing) '''
+
+# sort 0's, 1's, 2's
+arr = list(map(int,input("enter 0's, 1's, 2's: ").split()))
+
+low = 0
+mid = 0
+high = len(arr) - 1
+
+while mid <= high:
+    if arr[mid] == 0:
+        arr[low], arr[mid] = arr[mid], arr[low]
+        low += 1
+        mid += 1
+
+    elif arr[mid] == 1:
+        mid  += 1
+
+    else:           # arr[mid] == 2
+        arr[mid], arr[high] = arr[high], arr[mid]
+        high -= 1
+        
+print("sorted array: ",arr)        
