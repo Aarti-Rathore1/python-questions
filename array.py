@@ -479,7 +479,7 @@ def rotate_right(arr,k):
 
 arr = [1,2,3,4,5]
 rotate_right(arr,2)
-print(arr)'''
+print(arr)
 
 # union and intersection of two array
 
@@ -496,4 +496,14 @@ B = [3,4,5,6,7]
 
 u,i = union_and_intersection(A,B)
 print("union: ",u)
-print("intersection:",i)
+print("intersection:",i)'''
+
+# finding missing numbers from 1 to n
+arr = list(map(int,input("Enter numbers from 1 to n (one missing): ").split()))
+n = int(input("enter n: "))
+
+expected_sum = n * (n + 1) // 2
+actual_sum = sum(arr)
+
+missing = expected_sum - actual_sum
+print("Missing number: ",missing)
