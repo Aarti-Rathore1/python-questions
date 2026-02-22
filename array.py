@@ -551,7 +551,7 @@ for right in range(len(arr)):
         break
 
 if not found:
-    print("no subarry found")   '''
+    print("no subarry found")   
 
 
 
@@ -572,5 +572,22 @@ def longestCommonprefix(strs):
     return prefix     
 
 arr = ["flower","flow","flight"]
-print(longestCommonprefix(arr))   
+print(longestCommonprefix(arr))   '''
+
+# count frequency of characters using hashmap
+
+def countfrequency(s):
+    freq = {}
+
+    for char in s:
+        if char in freq:
+            freq[char] = 1
+        else:
+            freq[char] = 1
+
+    return freq
+
+string = "programming"
+print(countfrequency(string))
+
 
