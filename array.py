@@ -569,5 +569,8 @@ def longestCommonprefix(strs):
             if not prefix:
                 return ""
             
-    return prefix        
+    return prefix     
+
+arr = ["flower","flow","flight"]
+print(longestCommonprefix(arr))   
 
