@@ -527,7 +527,7 @@ while mid <= high:
         arr[mid], arr[high] = arr[high], arr[mid]
         high -= 1
         
-print("sorted array: ",arr)      '''
+print("sorted array: ",arr)      
 
 # subarray with given sum (sliding window)
 
@@ -551,5 +551,23 @@ for right in range(len(arr)):
         break
 
 if not found:
-    print("no subarry found")        
+    print("no subarry found")   '''
+
+
+
+# longest common prefix 
+
+def longestCommonprefix(strs):
+    if not strs:
+        return ""
+    
+    prefix =  strs[0]
+
+    for s in strs[1:]:
+        while s.find(prefix) != 0:
+            prefix = prefix[:-1]
+            if not prefix:
+                return ""
+            
+    return prefix        
 
