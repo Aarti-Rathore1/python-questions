@@ -572,7 +572,7 @@ def longestCommonprefix(strs):
     return prefix     
 
 arr = ["flower","flow","flight"]
-print(longestCommonprefix(arr))   '''
+print(longestCommonprefix(arr))   
 
 # count frequency of characters using hashmap
 
@@ -588,6 +588,30 @@ def countfrequency(s):
     return freq
 
 string = "programming"
-print(countfrequency(string))
+print(countfrequency(string))'''
+
+# anagram check
+def is_anagram(s1 ,s2):
+    if len(s1) != len(s2):
+        return False
+    
+    freq = {}
+
+    for ch in s1:
+        freq[ch]  = freq.get(ch,0) + 1
+         
+
+    for ch in s2:
+        if ch not in freq:
+            return False
+        freq[ch] -= 1
+        if freq[ch] == 0:
+            del freq[ch]
+
+    return len(freq) == 0  
+
+print(is_anagram("listen","silent"))           
+
+
 
 
