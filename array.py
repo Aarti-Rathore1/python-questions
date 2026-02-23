@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -610,7 +610,7 @@ def is_anagram(s1 ,s2):
 
     return len(freq) == 0  
 
-print(is_anagram("listen","silent"))      '''     
+print(is_anagram("listen","silent"))          
 
 # remove duplicates from string
 
@@ -623,6 +623,21 @@ def remove_duplicates(s):
 
     return result   
 
-print(remove_duplicates("programming"))     
+print(remove_duplicates("programming"))   
 
+# find first non repeatig character
 
+def first_non_repeating(s):
+    freq = {}
+
+    for ch in s:
+        freq[ch] = freq.get(ch,0) + 1
+
+    for ch in s:
+        if freq[ch] == 1:
+            return ch
+        
+    return None
+
+print(first_non_repeating("aabbccdefHHjj"))    
+        
