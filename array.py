@@ -588,7 +588,7 @@ def countfrequency(s):
     return freq
 
 string = "programming"
-print(countfrequency(string))'''
+print(countfrequency(string))
 
 # anagram check
 def is_anagram(s1 ,s2):
@@ -610,8 +610,19 @@ def is_anagram(s1 ,s2):
 
     return len(freq) == 0  
 
-print(is_anagram("listen","silent"))           
+print(is_anagram("listen","silent"))      '''     
 
+# remove duplicates from string
 
+def remove_duplicates(s):
+    result = ""
+
+    for ch in s:
+        if ch not in result:
+            result += ch
+
+    return result   
+
+print(remove_duplicates("programming"))     
 
 
