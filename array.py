@@ -639,7 +639,7 @@ def first_non_repeating(s):
         
     return None
 
-print(first_non_repeating("aabbccdefHHjj"))    '''
+print(first_non_repeating("aabbccdefHHjj"))    
 
 # string compresion
 
@@ -660,5 +660,39 @@ def compressString(s):
     result += s[-1] + str(count)
 
     return result
-print(compressString("aaabbbbbbcdee"))        
+print(compressString("aaabbbbbbcdee"))        '''
+
+# merge two sorted string
+
+def merge_sorted_lists(list1, list2):
+    i = 0
+    j = 0
+    result = []
+
+    while i < len(list1) and j < len(list2):
+        if list1[i] <= list2[j]:
+            result.append(list1[i])
+            i += 1
+            
+        else:
+            result.append(list2[j])
+            j += 1
+           
+     # adding remaining elements
+    while i < len(list1):
+        result.append(list1[i])
+        i += 1
+
+    while j < len(list2):
+        result.append(list2[j])
+        j += 1      
+
+    return result
+        
+print(merge_sorted_lists([1,3,5],[2,4,6]))
+print(merge_sorted_lists([1,4,5],[2,8,7]))
+print(merge_sorted_lists([],[9,3,5]))
+print(merge_sorted_lists([1,2,3],[]))
+print(merge_sorted_lists([-3 ,-4,5],[-1,2,3]))
+
 
