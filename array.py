@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -693,7 +693,7 @@ print(merge_sorted_lists([1,3,5],[2,4,6]))
 print(merge_sorted_lists([1,4,5],[2,8,7]))
 print(merge_sorted_lists([],[9,3,5]))
 print(merge_sorted_lists([1,2,3],[]))
-print(merge_sorted_lists([-3 ,-4,5],[-1,2,3]))'''
+print(merge_sorted_lists([-3 ,-4,5],[-1,2,3]))
 
 # commmon between two list
 
