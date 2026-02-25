@@ -660,7 +660,7 @@ def compressString(s):
     result += s[-1] + str(count)
 
     return result
-print(compressString("aaabbbbbbcdee"))        '''
+print(compressString("aaabbbbbbcdee"))        
 
 # merge two sorted string
 
@@ -693,6 +693,13 @@ print(merge_sorted_lists([1,3,5],[2,4,6]))
 print(merge_sorted_lists([1,4,5],[2,8,7]))
 print(merge_sorted_lists([],[9,3,5]))
 print(merge_sorted_lists([1,2,3],[]))
-print(merge_sorted_lists([-3 ,-4,5],[-1,2,3]))
+print(merge_sorted_lists([-3 ,-4,5],[-1,2,3]))'''
+
+# commmon between two list
+
+def common_elements(list1, list2):
+    return list(set(list1) & set(list2))
+
+print(common_elements([1,2,3,4],[1,34,4,5]))
 
 
