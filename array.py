@@ -662,7 +662,7 @@ def compressString(s):
     return result
 print(compressString("aaabbbbbbcdee"))        
 
-# merge two sorted string
+# merging two sorted string
 
 def merge_sorted_lists(list1, list2):
     i = 0
@@ -703,6 +703,8 @@ def common_elements(list1, list2):
 print(common_elements([1,2,3,4],[1,34,4,5]))'''
 
 # remove all occurence of a element
+
+
 
 
 
