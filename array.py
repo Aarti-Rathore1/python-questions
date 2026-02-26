@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -700,6 +700,8 @@ print(merge_sorted_lists([-3 ,-4,5],[-1,2,3]))
 def common_elements(list1, list2):
     return list(set(list1) & set(list2))
 
-print(common_elements([1,2,3,4],[1,34,4,5]))
+print(common_elements([1,2,3,4],[1,34,4,5]))'''
+
+# 
 
 
