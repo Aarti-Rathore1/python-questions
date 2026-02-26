@@ -702,6 +702,8 @@ def common_elements(list1, list2):
 
 print(common_elements([1,2,3,4],[1,34,4,5]))'''
 
-# 
+# remove all occurence of a element
+
+
 
 
