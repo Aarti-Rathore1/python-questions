@@ -702,7 +702,27 @@ def common_elements(list1, list2):
 
 print(common_elements([1,2,3,4],[1,34,4,5]))'''
 
-# remove all occurence of a element
+# pascal's triangle
+
+def generate_pascals_triangle(n):
+    triangle = []
+
+    for i in range(n):
+        row = [1] * (i + 1)    # first and last element are 1
+
+        for j in range(1 , i):
+            row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
+
+        triangle .append(row)
+
+    return triangle
+
+# example usage
+n = 5
+triangle = generate_pascals_triangle(n)
+
+for row in triangle:
+    print(row)
 
 
 
