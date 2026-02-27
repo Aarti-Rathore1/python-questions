@@ -700,9 +700,9 @@ print(merge_sorted_lists([-3 ,-4,5],[-1,2,3]))
 def common_elements(list1, list2):
     return list(set(list1) & set(list2))
 
-print(common_elements([1,2,3,4],[1,34,4,5]))'''
+print(common_elements([1,2,3,4],[1,34,4,5]))
 
-# pascal's triangle
+# pascals triangle
 
 def generate_pascals_triangle(n):
     triangle = []
@@ -722,7 +722,9 @@ n = 5
 triangle = generate_pascals_triangle(n)
 
 for row in triangle:
-    print(row)
+    print(row) '''
+
+
 
 
 
