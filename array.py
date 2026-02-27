@@ -702,7 +702,7 @@ def common_elements(list1, list2):
 
 print(common_elements([1,2,3,4],[1,34,4,5]))
 
-# pascals triangle
+# pascal's triangle
 
 def generate_pascals_triangle(n):
     triangle = []
