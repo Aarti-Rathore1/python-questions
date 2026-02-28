@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -723,9 +723,7 @@ def kadane(nums):
     
 arr = [-2, 1, -3, 4, 4,1,  -1, 2, 1, -5, 4]
 print("running kadane file")
-print(kadane(arr))     
-
-
+print(kadane(arr)) '''    
 
 
 
