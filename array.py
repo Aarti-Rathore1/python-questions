@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -445,22 +445,7 @@ for i in range(len(arr)):
         print("Indices:",seen[need],i)
 
 
-    seen[arr[i]] = 1   
-
-# kadane's algorithm (maximum subarray sum)
-def kadane(nums):
-    current_sum = nums[0]
-    max_sum  = nums[0]
-
-    for x in nums[1:]:
-        current_sum = max(x,current_sum + x)
-        max_sum = max(max_sum,current_sum)
-
-        return max_sum
-    
-arr = [-2, 1, -3, 4, 4,1,  -1, 2, 1, -5, 4]
-print("running kadane file")
-print(kadane(arr))    
+    seen[arr[i]] = 1      
 
 # rotate array by k positions
 def rotate_right(arr,k):
@@ -625,7 +610,7 @@ def remove_duplicates(s):
 
 print(remove_duplicates("programming"))   
 
-# find first non repeatig character
+# find first non repeating character
 
 def first_non_repeating(s):
     freq = {}
@@ -722,7 +707,23 @@ n = 5
 triangle = generate_pascals_triangle(n)
 
 for row in triangle:
-    print(row) '''
+    print(row) 
+
+
+# kadane's algorithm (maximum subarray sum)
+def kadane(nums):
+    current_sum = nums[0]
+    max_sum  = nums[0]
+
+    for x in nums[1:]:
+        current_sum = max(x,current_sum + x)
+        max_sum = max(max_sum,current_sum)
+
+        return max_sum
+    
+arr = [-2, 1, -3, 4, 4,1,  -1, 2, 1, -5, 4]
+print("running kadane file")
+print(kadane(arr))     
 
 
 
