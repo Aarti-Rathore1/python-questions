@@ -723,7 +723,7 @@ def kadane(nums):
     
 arr = [-2, 1, -3, 4, 4,1,  -1, 2, 1, -5, 4]
 print("running kadane file")
-print(kadane(arr)) 
+print(kadane(arr)) '''
 
 # set matrix zeros 
 def setZeroes(matrix):
@@ -752,7 +752,7 @@ matrix = [
     [5, 1, 6]
 ]            
 setZeroes(matrix)
-print(matrix)   '''
+print(matrix)   
 
 
 
