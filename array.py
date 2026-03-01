@@ -687,7 +687,7 @@ def common_elements(list1, list2):
 
 print(common_elements([1,2,3,4],[1,34,4,5]))
 
-# pascal triangle
+# pascal's triangle
 
 def generate_pascals_triangle(n):
     triangle = []
@@ -723,7 +723,38 @@ def kadane(nums):
     
 arr = [-2, 1, -3, 4, 4,1,  -1, 2, 1, -5, 4]
 print("running kadane file")
-print(kadane(arr)) '''    
+print(kadane(arr)) '''  
+
+# set zeros 
+def setZeroes(matrix):
+    if not matrix or not matrix[0]:
+        return
+ 
+    r = len(matrix)
+    c = len(matrix[0])
+    rowtrack = [0 for _ in range(r)]
+    coltrack = [0 for _ in range(c)]
+
+    for i in range(0,r):
+        for j in range(0,c):
+            if matrix[i][j] == 0:
+               rowtrack[i] =-1
+               coltrack[j] =-1
+
+    for i in range(0,r):
+        for j in range(0,c):
+            if rowtrack[i] == -1 or coltrack[j] == -1:
+               matrix[i][j] = 0
+
+matrix = [
+    [1, 1, 1],
+    [2, 0, 4],
+    [5, 1, 6]
+]            
+setZeroes(matrix)
+print(matrix)   
+
+
 
 
 
