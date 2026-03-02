@@ -755,6 +755,7 @@ setZeroes(matrix)
 print(matrix)   '''
 
 # next permutation and combination
+# set 0's ,1's,2's
 
 
 
