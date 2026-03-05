@@ -1,5 +1,5 @@
  # find maximum and minimum of array 
-'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -752,9 +752,9 @@ matrix = [
     [5, 1, 6]
 ]            
 setZeroes(matrix)
-print(matrix)   '''
+print(matrix)   
 
-# next permutation and combination
+
 
 
 
