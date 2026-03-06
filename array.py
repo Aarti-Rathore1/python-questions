@@ -1,3 +1,4 @@
+# tcs nqt questions
  # find maximum and minimum of array 
 arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
