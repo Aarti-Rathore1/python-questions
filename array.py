@@ -711,7 +711,7 @@ for row in triangle:
     print(row) 
 
 
-# kadane's algorithm (maximum subarray sum)
+#tcs-  kadane's algorithm (maximum subarray sum)
 def kadane(nums):
     current_sum = nums[0]
     max_sum  = nums[0]
@@ -726,7 +726,7 @@ arr = [-2, 1, -3, 4, 4,1,  -1, 2, 1, -5, 4]
 print("running kadane file")
 print(kadane(arr)) 
 
-# set matrix zeros 
+#  tcs - set matrix zeros 
 def setZeroes(matrix):
     if not matrix or not matrix[0]:
         return
@@ -755,8 +755,7 @@ matrix = [
 setZeroes(matrix)
 print(matrix)   
 
-# next permutation
-# set 0's ,1's,2's 
+# 
 
 
 
