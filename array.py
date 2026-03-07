@@ -711,7 +711,7 @@ for row in triangle:
     print(row) 
 
 
-#tcs-  kadane's algorithm (maximum subarray sum)
+# kadane's algorithm (maximum subarray sum)
 def kadane(nums):
     current_sum = nums[0]
     max_sum  = nums[0]
@@ -726,7 +726,7 @@ arr = [-2, 1, -3, 4, 4,1,  -1, 2, 1, -5, 4]
 print("running kadane file")
 print(kadane(arr)) 
 
-#  tcs - set matrix zeros 
+# set matrix zeros 
 def setZeroes(matrix):
     if not matrix or not matrix[0]:
         return
@@ -755,8 +755,22 @@ matrix = [
 setZeroes(matrix)
 print(matrix)   
 
-# 
+# armstrong number
+num = int(input("Enter a number: "))
+ 
+temp = num
+sum = 0
 
+while temp > 0:
+    digit = temp % 10      
+    sum = sum + digit**3
+    temp = temp // 10
+
+if sum == num:
+    print("Armstrong number")
+
+else:
+    print("not an amstrong number")       
 
 
 
