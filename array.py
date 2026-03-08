@@ -1,6 +1,6 @@
-# tcs nqt questions
- # find maximum and minimum of array 
-arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+
+# find maximum and minimum of array 
+'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -770,7 +770,27 @@ if sum == num:
     print("Armstrong number")
 
 else:
-    print("not an amstrong number")       
+    print("not an amstrong number")  '''     
+
+
+# largest element in an array
+
+n = int(input("enter the number of elements: "))
+arr = []
+
+for i in range(n):
+    num = int(input("enter elements: "))
+    arr.append(num)
+
+largest = arr[0]
+
+for i in arr:
+    if i > largest:
+        largest = i
+
+
+print("largest element is: ",largest)   
+    
 
 
 
