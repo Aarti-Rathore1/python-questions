@@ -770,7 +770,7 @@ if sum == num:
     print("Armstrong number")
 
 else:
-    print("not an amstrong number")  '''     
+    print("not an amstrong number")  
 
 
 # largest element in an array
@@ -789,7 +789,26 @@ for i in arr:
         largest = i
 
 
-print("largest element is: ",largest)   
+print("largest element is: ",largest)   '''
+
+# count even odd  
+
+arr = list(map(int,input("enter the elements: ").split()))
+
+even = 0
+odd = 0
+
+for num in arr:
+    if num % 2 == 0:
+        even += 1
+
+    else:
+        odd += 1
+
+
+print("even numbers: ",even)
+print("odd numbers: ",odd)            
+
     
 
 
