@@ -789,7 +789,7 @@ for i in arr:
         largest = i
 
 
-print("largest element is: ",largest)   '''
+print("largest element is: ",largest)   
 
 # count even odd  
 
@@ -807,7 +807,9 @@ for num in arr:
 
 
 print("even numbers: ",even)
-print("odd numbers: ",odd)            
+print("odd numbers: ",odd)    '''      
+
+
 
     
 
