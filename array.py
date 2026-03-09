@@ -822,7 +822,7 @@ else:
             print("not prime")
             break
         else:
-            print("prime")    '''
+            print("prime")    
 
 # reverse a number
 n = int(input("enter element: "))
@@ -833,7 +833,19 @@ while n > 0:
     rev = rev * 10 + digit
     n = n // 10
 
-print(rev)     
+print(rev) '''
+
+
+# factorial 
+
+n = int(input("enter element: "))
+fact = 1
+
+for i in range(1, n+1):
+    fact = fact * i
+
+print(fact)    
+
 
 
 
