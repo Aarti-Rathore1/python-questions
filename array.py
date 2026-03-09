@@ -807,7 +807,7 @@ for num in arr:
 
 
 print("even numbers: ",even)
-print("odd numbers: ",odd)    '''      
+print("odd numbers: ",odd)        
 
 
 # prime or not
@@ -822,7 +822,18 @@ else:
             print("not prime")
             break
         else:
-            print("prime")    
+            print("prime")    '''
+
+# reverse a number
+n = int(input("enter element: "))
+rev = 0
+
+while n > 0:
+    digit = n % 10
+    rev = rev * 10 + digit
+    n = n // 10
+
+print(rev)     
 
 
 
