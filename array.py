@@ -833,7 +833,7 @@ while n > 0:
     rev = rev * 10 + digit
     n = n // 10
 
-print(rev) 
+print(rev) '''
 
 
 # factorial 
@@ -857,7 +857,7 @@ for i in range(n):
     print(a , end = " ")
     c = a + b
     a = b
-    b = c '''
+    b = c 
 
 
 
