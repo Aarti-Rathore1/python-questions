@@ -833,7 +833,7 @@ while n > 0:
     rev = rev * 10 + digit
     n = n // 10
 
-print(rev) '''
+print(rev) 
 
 
 # factorial 
@@ -844,7 +844,7 @@ fact = 1
 for i in range(1, n+1):
     fact = fact * i
 
-print(fact)   
+print(fact)   '''
 
 # fibonacci series
 
