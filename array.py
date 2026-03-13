@@ -1,6 +1,6 @@
 
 # find maximum and minimum of array 
-arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
+'''arr = list(map(int,input("Enter numbers separated by spaces: ").split()))
 
 Maximum = arr[0]
 Minimum = arr[0]
@@ -870,7 +870,7 @@ for i in range (1, min(a , b) + 1):
     if a % i == 0 and b % i == 0:
         gcd = i
 
-print(gcd)        
+print(gcd)    '''    
 
 
 
