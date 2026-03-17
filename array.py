@@ -857,7 +857,7 @@ for i in range(n):
     print(a , end = " ")
     c = a + b
     a = b
-    b = c 
+    b = c '''
 
 # gcd and hcf of two numbers
 
@@ -870,7 +870,7 @@ for i in range (1, min(a , b) + 1):
     if a % i == 0 and b % i == 0:
         gcd = i
 
-print(gcd)    '''    
+print(gcd)        
 
 
 
