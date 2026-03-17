@@ -833,7 +833,7 @@ while n > 0:
     rev = rev * 10 + digit
     n = n // 10
 
-print(rev) '''
+print(rev) 
 
 
 # factorial 
@@ -873,7 +873,7 @@ for i in range (1, min(a , b) + 1):
 print(gcd)        
 
 
-
+'''
 
 
     
