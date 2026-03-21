@@ -13,7 +13,7 @@ print("AFTER MOVING ALL THE ZEROES TO THE END:",arr)
 # decimal to binary
 
 n = int(input("enter elements: "))     # n = 10  , n.bit_length() = 10 -> 1010 -> 4 bits
-print((1 << n.bit_length()) - 1 - n)   # 1 << 4 , 1010 -> 100000 -> 16 -> 16-1 -> 15 - 10 -> 5'''
+print((1 << n.bit_length()) - 1 - n)   # 1 << 4 , 1010 -> 100000 -> 16 -> 16-1 -> 15 - 10 -> 5
 
 # counting days problem
 
@@ -34,4 +34,18 @@ def count_sundays(start_day , n):
     return 1 +(remaining_days // 7)
 
 #example
-print(count_sundays("tue",20))
+print(count_sundays("tue",20))'''
+
+# maximum number count(array traversal)
+n  = int(input())
+arr = list(map(int,input().split()))
+
+count = 0
+max_so_far = float('-inf')
+
+for num in arr:
+    if num > max_so_far:
+        count += 1
+        max_so_far = num
+
+print(count)        
