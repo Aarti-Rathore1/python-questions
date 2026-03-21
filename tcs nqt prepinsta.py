@@ -18,7 +18,7 @@ print((1 << n.bit_length()) - 1 - n)   # 1 << 4 , 1010 -> 100000 -> 16 -> 16-1 -
 # counting days problem
 
 def count_sundays(start_day , n):
-    days = {"mon": 0, "tue": 1, "wed": 2, "thur": 3, "fri": 4, "sat": 5, "sun": 6 }
+    days = {"mon": 0, "tue": 1, "wed": 2, "thu": 3, "fri": 4, "sat": 5, "sun": 6 }
 
     start_index = days[start_day.lower()]
 
